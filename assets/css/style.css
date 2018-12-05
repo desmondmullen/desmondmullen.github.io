@@ -1,6 +1,11 @@
     header {
         background-color: #ffffff;
         display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .width-960px {
         width: 960px;
         margin: 0 auto;
     }
@@ -74,16 +79,15 @@
     }
     
     body {
-        background-image: url("assets/images/graphy_@2X.png");
+        background-image: url("../images/pineapplecut.png");
         margin: 0 auto;
         color: #777777;
         font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     }
     
     #body-background {
-        /* background-color: lightgray; */
-        padding: 30px 0 100px 0;
-        height: 100%;
+        padding: 30px 0 0 0;
+        min-height: calc(100vh - 214px);
     }
     
     #main-content {
@@ -93,10 +97,6 @@
         border: 1px solid #dddddd;
         padding: 20px 30px 10px 30px;
         background-color: #fff;
-    }
-    
-    #main-content.more-padding {
-        padding-bottom: 40px;
     }
     
     input {
@@ -186,13 +186,14 @@
     
     footer {
         border-top: 5px solid #4aaaa5;
-        text-align: center;
         margin: 0 auto;
         background-color: #666666;
         color: #ccc;
-        padding-top: 30px;
-        /* position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%; */
+        text-align: center;
+        font-size: small;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        position: sticky;
     }
