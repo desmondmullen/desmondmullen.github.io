@@ -66,7 +66,7 @@
             opacity: 0.65;
         }
         
-        a.portfolio:hover figcaption {
+        a.portfolio:hover .figcaption-fix {
             background-color: #E89F0C;
         }
         
@@ -165,8 +165,9 @@
             margin: 0;
             padding: 0;
         }
+        /*figcaption cannot be a child of an a element. To make the hover highlighting work I turned figcaption into a section with figcaption-fix as its class*/
         
-        figcaption {
+        .figcaption-fix {
             position: relative;
             height: 20px;
             width: 180px;
