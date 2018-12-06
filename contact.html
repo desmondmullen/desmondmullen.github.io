@@ -11,29 +11,27 @@
 <body>
     <header class="header, clearfix">
         <section class="width-960px">
-            <section id="header-name">
-                Desmond Mullen
-            </section>
-            <nav id="header-menu">
-                <section id="header-menu-left">
+            <a class="header-name" href="http://desmondmullen.com" alt="desmondmullen.com">Desmond Mullen</a>
+            <nav class="header-menu">
+                <section class="header-menu-left">
                     <a href="index.html">About</a>
                 </section>
-                <section id="header-menu-right">
+                <section class="header-menu-right">
                     <a href="portfolio.html">Portfolio</a>
                 </section>
-                <section id="header-menu-right">
+                <section class="header-menu-right">
                     <a href="contact.html">Contact</a>
                 </section>
             </nav>
         </section>
     </header>
     <hr class="header">
-    <section id="body-background">
-        <main id="main-content">
+    <section class="body-background">
+        <main class="main-content">
             <h1>Contact</h1>
-            <hr class="main-content">
+            <hr class="index">
             <form>
-                Name <input type="text" name="name" value="John Smith"> Email <input type="email" name="email" value="example@gmail.com"> Message <textarea></textarea>
+                Name <input type="text" name="name" value="John Smith" onclick="this.focus();this.select()"> Email <input type="email" name="email" value="example@gmail.com" onclick="this.focus();this.select()"> Message <textarea></textarea>
                 <input type="submit" value="Submit" class="button">
             </form>
         </main>
