@@ -1,199 +1,214 @@
-    header {
-        background-color: #ffffff;
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .width-960px {
-        width: 960px;
-        margin: 0 auto;
-    }
-    
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: block;
-    }
-    
-    #header-name {
-        background-color: #4aaaa5;
-        color: white;
-        font-style: strong;
-        padding: 30px;
-        font-family: Georgia, Times, 'Times New Roman', serif;
-        font-size: x-large;
-        font-weight: bold;
-        float: left;
-    }
-    
-    #header-menu {
-        float: right;
-        margin-top: 30px;
-    }
-    
-    #header-menu-left {
-        display: inline;
-        margin-top: 10px;
-    }
-    
-    #header-menu-right {
-        display: inline;
-        margin-top: 10px;
-        margin-left: 5px;
-        padding-left: 10px;
-        border-left: 2px solid #dddddd;
-    }
-    
-    a:link,
-    a:visited {
-        text-decoration: none;
-        color: #777777;
-    }
-    
-    a.portfolio {
-        color: white;
-    }
-    
-    a:hover,
-    a:active {
-        color: green;
-    }
-    
-    hr {
-        border: 1px solid #cccccc;
-        margin: 20px 0 0 0;
-    }
-    
-    hr.portfolio {
-        margin: 20px 0 30px 0;
-    }
-    
-    hr.header {
-        margin: 0;
-    }
-    
-    hr.main-content {
-        border: 1px solid #cccccc;
-        margin: 20px 0 20px 0;
-    }
-    
-    body {
-        background-image: url("../images/pineapplecut.png");
-        margin: 0 auto;
-        color: #777777;
-        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    }
-    
-    #body-background {
-        padding: 30px 0 0 0;
-        min-height: calc(100vh - 214px);
-    }
-    
-    #main-content {
-        width: 900px;
-        display: block;
-        margin: 0 auto;
-        border: 1px solid #dddddd;
-        padding: 20px 30px 10px 30px;
-        background-color: #fff;
-    }
-    
-    input {
-        width: 100%;
-        line-height: 300%;
-        margin: 10px 0 20px 0;
-        color: #777777;
-        border: 1px solid #ebe9e9;
-        padding-left: 10px;
-    }
-    
-    textarea {
-        width: 100%;
-        height: 180px;
-        line-height: 300%;
-        border: 1px solid #ebe9e9;
-        margin: 10px 0 20px 0;
-        color: #777777;
-        padding-left: 10px;
-    }
-    
-    .button {
-        background-color: #4aaaa5;
-        color: white;
-        line-height: 200%;
-        width: 130px;
-        border: none;
-        margin: 0;
-        text-align: center;
-        font-size: large;
-    }
-    
-    h1 {
-        color: #4aaaa5;
-        font-family: Georgia, Times, 'Times New Roman', serif;
-        font-size: x-large;
-        font-weight: bold;
-        margin: 0;
-    }
-    
-    #body-about {
-        padding-bottom: 20px;
-        line-height: 150%;
-    }
-    
-    .floatleft {
-        /* for profile pic */
-        float: left;
-        margin: 5px 10px 10px 0
-    }
-    
-    .img-portfolio {
-        position: relative;
-        width: 200px;
-        height: 150px;
-    }
-    
-    figure {
-        position: relative;
-        margin: 0;
-        padding: 0;
-    }
-    
-    figcaption {
-        position: relative;
-        height: 20px;
-        width: 180px;
-        background-color: #4aaaa5;
-        color: white;
-        font-family: Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-        padding: 10px;
-        top: -50px;
-        z-index: 2;
-    }
-    
-    #left-column {
-        float: left;
-        margin-top: 0;
-    }
-    
-    #right-column {
-        float: left;
-        margin-top: 0;
-        margin-left: 40px;
-    }
-    
-    footer {
-        border-top: 5px solid #4aaaa5;
-        margin: 0 auto;
-        background-color: #666666;
-        color: #ccc;
-        text-align: center;
-        font-size: small;
-        width: 100%;
-        padding-top: 40px;
-        padding-bottom: 10px;
-        margin-top: 30px;
-        position: sticky;
-    }
+        header {
+            background-color: #ffffff;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .width-960px {
+            width: 960px;
+            margin: 0 auto;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+        #header-name {
+            background-color: #4aaaa5;
+            color: white;
+            font-style: strong;
+            padding: 30px;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-size: xx-large;
+            font-weight: bold;
+            float: left;
+        }
+        
+        #header-menu {
+            float: right;
+            margin-top: 35px;
+        }
+        
+        #header-menu-left {
+            display: inline;
+            margin-top: 10px;
+        }
+        
+        #header-menu-right {
+            display: inline;
+            margin-top: 10px;
+            margin-left: 15px;
+            padding-left: 20px;
+            border-left: 2px solid #dddddd;
+        }
+        
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: #777777;
+        }
+        
+        a.portfolio {
+            color: white;
+        }
+        
+        a:hover,
+        a:active {
+            color: green;
+        }
+        
+        hr {
+            border: 1px solid #cccccc;
+            margin: 20px 0 0 0;
+        }
+        
+        hr.portfolio {
+            margin: 30px 0 30px 0;
+        }
+        
+        hr.header {
+            margin: 0;
+        }
+        
+        hr.main-content {
+            border: 1px solid #cccccc;
+            margin: 30px 0 20px 0;
+        }
+        
+        body {
+            background-image: url("../images/pineapplecut.png");
+            margin: 0 auto;
+            color: #777777;
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        }
+        
+        #body-background {
+            padding: 30px 0 0 0;
+            min-height: calc(100vh - 225px);
+        }
+        
+        #main-content {
+            width: 900px;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #dddddd;
+            padding: 40px 30px 20px 30px;
+            background-color: #fff;
+        }
+        
+        ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            margin: 0 80px 0 80px;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        em {
+            font-style: italic;
+        }
+        
+        input {
+            width: 100%;
+            line-height: 300%;
+            margin: 10px 0 20px 0;
+            color: #777777;
+            border: 1px solid #ebe9e9;
+            padding-left: 10px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 180px;
+            line-height: 300%;
+            border: 1px solid #ebe9e9;
+            margin: 10px 0 20px 0;
+            color: #777777;
+            padding-left: 10px;
+        }
+        
+        .button {
+            background-color: #4aaaa5;
+            color: white;
+            line-height: 200%;
+            width: 130px;
+            border: none;
+            margin: 0;
+            text-align: center;
+            font-size: large;
+        }
+        
+        h1 {
+            color: #4aaaa5;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-size: xx-large;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        #body-about {
+            padding-bottom: 20px;
+            line-height: 200%;
+            font-size: large;
+        }
+        
+        .floatleft {
+            /* for profile pic */
+            float: left;
+            margin: 10px 20px 10px 0
+        }
+        
+        .img-portfolio {
+            position: relative;
+            width: 200px;
+            height: 150px;
+        }
+        
+        figure {
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        
+        figcaption {
+            position: relative;
+            height: 20px;
+            width: 180px;
+            background-color: #4aaaa5;
+            color: white;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            padding: 10px;
+            top: -50px;
+            z-index: 2;
+        }
+        
+        #left-column {
+            float: left;
+            margin-top: 0;
+        }
+        
+        #right-column {
+            float: left;
+            margin-top: 0;
+            margin-left: 40px;
+        }
+        
+        footer {
+            border-top: 10px solid #4aaaa5;
+            margin: 0 auto;
+            background-color: #666666;
+            color: #ccc;
+            text-align: center;
+            font-size: small;
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            position: sticky;
+        }
