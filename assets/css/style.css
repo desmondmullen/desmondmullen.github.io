@@ -24,14 +24,12 @@ body {
     margin-right: 12.5%;
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
     text-decoration: none;
     color: #777777;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
     color: #E89F0C;
 }
 
@@ -39,8 +37,7 @@ a.navbar-brand {
     color: white;
 }
 
-a.navbar-brand:hover,
-.btn:hover {
+a.navbar-brand:hover, .btn:hover {
     background-color: #E89F0C;
 }
 
@@ -212,11 +209,15 @@ button.btn-submit {
     /* Set the fixed height of the footer here */
     border-top: 8px solid #4aaaa5;
     background-color: #666666;
-    color: #ccc;
+    color: white;
     text-align: center;
-    font-size: small;
+    font-size: medium;
     width: 100%;
     padding-top: 36px;
+}
+
+.copyright {
+    color: white;
 }
 
 @media only screen and (max-width: 900px) {
@@ -251,6 +252,9 @@ button.btn-submit {
     .width-180 {
         width: 180px;
     }
+    .footer {
+        font-size: small;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -269,9 +273,7 @@ button.btn-submit {
     .navbar-nav {
         width: 100%;
     }
-    ul.navbar-nav,
-    li.nav-item,
-    a.nav-link {
+    ul.navbar-nav, li.nav-item, a.nav-link {
         display: inline;
         text-align: center;
     }
