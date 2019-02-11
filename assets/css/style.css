@@ -13,6 +13,13 @@ a:hover, a:active {
     color: #E89F0C;
 }
 
+.fixed-header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+}
+
 nav {
     font-size: xx-large;
     margin-left: 1.5vw;
@@ -55,7 +62,7 @@ h1 {
 
 h1.animated {
     display: block;
-    margin: 10px 12.5vw 0px 12.5vw;
+    margin: 60px 12.5vw 0px 12.5vw;
     animation-name: h1-animated;
     animation-duration: 3s;
 }
@@ -124,11 +131,32 @@ li {
     margin: 20px 0 0 5vw;
 }
 
+.telly-award {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.telly-award img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.reviews {
+    display: block;
+    text-align: center;
+    margin: 0 8vw 0 35vw;
+}
+
+.review-text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .dsc-portfolio {
     float: left;
     width: 60vw;
     margin: 10px 10px 10px 20px;
-    font-size: x-large;
+    font-size: large;
     line-height: 125%;
 }
 
@@ -200,6 +228,10 @@ li {
     .portfolio-line-items {
         position: relative;
         margin: 10px 0 0 5vw;
+    }
+    .reviews {
+        font-size: small;
+        margin: 0 13vw 0 35vw;
     }
     .dsc-portfolio {
         float: left;
