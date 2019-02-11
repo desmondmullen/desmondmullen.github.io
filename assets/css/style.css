@@ -276,9 +276,9 @@ li {
     .img-caption {
         position: relative;
         font-weight: bold;
-        font-size: x-small;
+        font-size: xx-small;
         text-decoration: none;
-        top: -32px;
+        top: -40px;
         height: 2rem;
         padding: 5px 5px 0 5px;
         z-index: 5;
@@ -287,8 +287,8 @@ li {
     }
     .img-caption-rectangle {
         position: relative;
-        top: 20px;
-        height: 1.5rem;
+        top: 12px;
+        height: 2rem;
         background-color: white;
     }
     .line-item {
