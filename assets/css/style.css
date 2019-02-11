@@ -22,7 +22,7 @@ a:hover, a:active {
     position: fixed;
     top: 0;
     background-color: white;
-    z-index: 99;
+    z-index: 5;
 }
 
 nav {
@@ -30,6 +30,10 @@ nav {
     margin-left: 1.5vw;
     font-family: 'Bungee Inline', cursive;
     font-weight: bold;
+}
+
+.links {
+    display: inline;
 }
 
 .nav-link {
@@ -184,10 +188,6 @@ li {
     text-align: center;
 }
 
-a:link .img-caption, a:visited .img-caption {
-    text-decoration: none;
-}
-
 .img-caption-rectangle {
     position: relative;
     top: 165px;
@@ -240,7 +240,10 @@ a:link .img-caption, a:visited .img-caption {
     }
     .nav-link {
         font-size: small;
-        margin: 5px 10px;
+        margin: 5px 5px;
+    }
+    .links {
+        display: block;
     }
     .menu {
         display: block;
@@ -269,16 +272,34 @@ a:link .img-caption, a:visited .img-caption {
         width: 30vw;
         border-left: 1px solid black;
     }
+    .img-caption {
+        position: relative;
+        font-weight: bold;
+        font-size: x-small;
+        text-decoration: none;
+        top: -32px;
+        height: 2rem;
+        padding: 5px 5px 0 5px;
+        z-index: 5;
+        color: green;
+        text-align: center;
+    }
+    .img-caption-rectangle {
+        position: relative;
+        top: 20px;
+        height: 1.5rem;
+        background-color: white;
+    }
     .line-item {
         margin: 10px 0;
     }
     .ttl-portfolio {
         float: left;
         margin: 0 10px;
-        height: 3vh;
+        height: 1.7vh;
         width: 55vw;
-        font-size: small;
-        padding: 0px;
+        font-size: x-small;
+        padding: 5px;
     }
     h1 {
         font-size: x-large;
