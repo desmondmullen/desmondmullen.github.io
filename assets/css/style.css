@@ -22,7 +22,7 @@ a:hover, a:active {
     position: fixed;
     top: 0;
     background-color: white;
-    z-index: 5;
+    z-index: 99;
 }
 
 nav {
@@ -64,7 +64,8 @@ hr.header {
 }
 
 h1 {
-    font-size: xx-large;
+    font-family: 'Bungee Inline', cursive;
+    font-size: x-large;
     font-weight: bold;
     margin: 0;
 }
@@ -183,7 +184,7 @@ li {
     top: -100px;
     height: 2rem;
     padding: 10px 10px 0 10px;
-    z-index: 99;
+    z-index: 5;
     color: green;
     text-align: center;
 }
