@@ -114,33 +114,6 @@ li {
     line-height: 150%;
 }
 
-li.nav-item {
-    line-height: 25%;
-}
-
-.navbar {
-    padding: 0;
-}
-
-.navbar-brand {
-    opacity: 1;
-    color: black;
-    font-size: xx-large;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-.nav-item {
-    margin-top: 0;
-    margin-left: 15px;
-    padding-left: 20px;
-    border-left: 2px solid gray;
-}
-
-.nav-item:first-child {
-    border-left: none;
-}
-
 .profile-pic {
     float: left;
     margin: 5px 20px 5px 0;
@@ -215,7 +188,14 @@ li.nav-item {
     }
     .nav-link {
         font-size: small;
-        margin: 10px 10px;
+        margin: 5px 10px;
+    }
+    .menu {
+        display: block;
+        font-size: small;
+    }
+    .index-indent {
+        margin: 2vh 6.25vw;
     }
     .portfolio-line-items {
         position: relative;
@@ -244,16 +224,6 @@ li.nav-item {
         font-size: small;
         padding: 0px;
     }
-    .navbar-brand {
-        padding: 20px;
-        font-size: x-large;
-    }
-    .nav-item {
-        margin-left: 0;
-        padding-left: 0;
-        border-left: none;
-        text-align: right;
-    }
     h1 {
         font-size: x-large;
     }
@@ -261,7 +231,7 @@ li.nav-item {
         margin: 10px 0 5px 0;
     }
     ul {
-        margin: 0 10px 0 10px;
+        margin: 0;
     }
     .text-align-center {
         text-align: center;
@@ -274,23 +244,4 @@ li.nav-item {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .navbar-brand {
-        width: 100%;
-        margin: 0 auto;
-        font-size: large;
-        text-align: center;
-    }
-    .navbar-nav {
-        width: 100%;
-    }
-    ul.navbar-nav, li.nav-item, a.nav-link {
-        display: inline;
-        text-align: center;
-    }
-    .nav-item {
-        margin-left: 15px;
-        padding-left: 20px;
-        border-left: 2px solid #dddddd;
-    }
-}
+@media only screen and (max-width: 600px) {}
