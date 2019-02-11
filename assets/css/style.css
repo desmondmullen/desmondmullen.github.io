@@ -275,21 +275,19 @@ li {
     }
     .img-caption {
         position: relative;
+        display: block;
         font-weight: bold;
         font-size: xx-small;
         text-decoration: none;
-        top: -40px;
-        height: 2rem;
-        padding: 5px 5px 0 5px;
+        top: 0;
+        /* margin: 20px 5px; */
+        padding: 0;
         z-index: 5;
         color: green;
         text-align: center;
     }
     .img-caption-rectangle {
-        position: relative;
-        top: 12px;
-        height: 2rem;
-        background-color: white;
+        display: none;
     }
     .line-item {
         margin: 10px 0;
