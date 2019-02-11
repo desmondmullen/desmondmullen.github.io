@@ -45,7 +45,7 @@ a.navbar-brand:hover, .btn:hover {
 }
 
 a.img-portfolio:hover {
-    opacity: 0.65;
+    opacity: 0.5;
     background-color: #E89F0C;
 }
 
@@ -171,9 +171,28 @@ li {
     border-left: 1px solid black;
 }
 
-.float-left {
-    float: left;
-    /* vertical-align: text-top; */
+.img-caption {
+    position: relative;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    top: -100px;
+    height: 2rem;
+    padding: 10px 10px 0 10px;
+    z-index: 99;
+    color: green;
+    text-align: center;
+}
+
+a:link .img-caption, a:visited .img-caption {
+    text-decoration: none;
+}
+
+.img-caption-rectangle {
+    position: relative;
+    top: 165px;
+    height: 2rem;
+    background-color: white;
 }
 
 .line-item {
