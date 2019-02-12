@@ -50,6 +50,11 @@ a.img-portfolio:hover {
     background-color: dodgerblue;
 }
 
+a.review-text {
+    font-size: medium;
+    text-align: center;
+}
+
 hr {
     border: 1px solid lightgray;
     width: 97vw;
