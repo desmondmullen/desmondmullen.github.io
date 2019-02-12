@@ -162,7 +162,7 @@ li {
 
 .dsc-portfolio {
     float: left;
-    width: 60vw;
+    width: 58vw;
     margin: 10px 10px 10px 20px;
     font-size: large;
     line-height: 125%;
@@ -202,7 +202,7 @@ img.img-portfolio {
 .ttl-portfolio {
     float: left;
     margin: 0 20px;
-    width: 60vw;
+    width: 58vw;
     background-color: #E8860C;
     color: white;
     font-family: Georgia, Times, 'Times New Roman', serif;
