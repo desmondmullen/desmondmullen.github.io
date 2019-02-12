@@ -122,7 +122,7 @@ p.no-bottom-margin {
 
 ul {
     list-style-type: disc;
-    list-style-position: inside;
+    list-style-position: outside;
     margin: 0 20px 0 20px;
     font-size: large;
 }
