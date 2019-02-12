@@ -173,31 +173,26 @@ li {
 .img-portfolio {
     float: left;
     width: 30vw;
+}
+
+img.img-portfolio {
     border-left: 1px solid black;
 }
 
 .img-caption {
     position: relative;
+    display: block;
     font-weight: bold;
     font-size: large;
     text-decoration: none;
-    top: -100px;
-    height: 2rem;
-    padding: 10px 10px 0 10px;
+    padding: 0;
     z-index: 5;
     color: green;
     text-align: center;
 }
 
-.img-caption-rectangle {
-    position: relative;
-    top: 165px;
-    height: 2rem;
-    background-color: white;
-}
-
 .line-item {
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
 }
 
 .line-item::after {
@@ -274,19 +269,16 @@ li {
         border-left: 1px solid black;
     }
     .img-caption {
-        position: relative;
-        display: block;
-        font-weight: bold;
+        /* position: relative; */
+        /* display: block; */
+        /* font-weight: bold; */
         font-size: xx-small;
-        text-decoration: none;
-        top: 0;
-        padding: 0;
-        z-index: 5;
-        color: green;
-        text-align: center;
-    }
-    .img-caption-rectangle {
-        display: none;
+        /* text-decoration: none; */
+        /* top: 0; */
+        /* padding: 0; */
+        /* z-index: 5; */
+        /* color: green; */
+        /* text-align: center; */
     }
     .line-item {
         margin: 10px 0;
