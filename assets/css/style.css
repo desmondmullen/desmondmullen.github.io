@@ -10,7 +10,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    color: #E89F0C;
+    color: #E8860C;
 }
 
 .plain-link {
@@ -44,17 +44,17 @@ nav {
 }
 
 a.navbar-brand:hover, .btn:hover {
-    background-color: #E89F0C;
+    background-color: #E8860C;
     color: white;
 }
 
 a.img-portfolio:hover {
     opacity: 0.5;
-    background-color: #E89F0C;
+    background-color: #E8860C;
 }
 
 hr {
-    border: 1px solid #cccccc;
+    border: 1px solid gray;
     width: 97vw;
 }
 
@@ -85,17 +85,17 @@ h1.animated {
         opacity: 1;
     }
     40% {
-        color: gray;
+        color: dodgerblue;
     }
     50% {
         opacity: 1;
     }
     60% {
-        background-color: gray;
+        background-color: dodgerblue;
     }
     75% {
         opacity: 0;
-        color: gray;
+        color: dodgerblue;
     }
     80% {
         opacity: 1;
@@ -205,7 +205,7 @@ img.img-portfolio {
     float: left;
     margin: 0 20px;
     width: 60vw;
-    background-color: gray;
+    background-color: dodgerblue;
     color: white;
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
@@ -222,7 +222,7 @@ img.img-portfolio {
 .footer {
     position: fixed;
     bottom: 0;
-    background-color: #666666;
+    background-color: dodgerblue;
     color: white;
     text-align: center;
     font-size: medium;
