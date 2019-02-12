@@ -4,25 +4,22 @@ body {
     margin: 0;
 }
 
-a:link, a:visited {
-    /* text-decoration: none; */
-    /* color: black; */
-}
-
 a:hover, a:active {
-    color: #E8860C;
+    color: dodgerblue;
 }
 
 .plain-link {
     text-decoration: none;
-    color: black;
+    color: darkslategray;
 }
 
 .fixed-header {
     position: fixed;
     top: 0;
     background-color: white;
+    border-top: 5px solid dodgerblue;
     z-index: 99;
+    width: 100%;
 }
 
 nav {
@@ -44,17 +41,17 @@ nav {
 }
 
 a.navbar-brand:hover, .btn:hover {
-    background-color: #E8860C;
+    background-color: dodgerblue;
     color: white;
 }
 
 a.img-portfolio:hover {
     opacity: 0.5;
-    background-color: #E8860C;
+    background-color: dodgerblue;
 }
 
 hr {
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     width: 97vw;
 }
 
@@ -67,12 +64,13 @@ h1 {
     font-family: 'Bungee Inline', cursive;
     font-size: x-large;
     font-weight: bold;
+    color: darkslategray;
     margin: 0;
 }
 
 h1.animated {
     display: block;
-    margin: 60px 12.5vw 0px 12.5vw;
+    margin: 65px 12.5vw 0px 12.5vw;
     animation-name: h1-animated;
     animation-duration: 3s;
 }
@@ -205,7 +203,7 @@ img.img-portfolio {
     float: left;
     margin: 0 20px;
     width: 60vw;
-    background-color: dodgerblue;
+    background-color: #E8860C;
     color: white;
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
@@ -266,19 +264,9 @@ img.img-portfolio {
     .img-portfolio {
         float: left;
         width: 30vw;
-        border-left: 1px solid black;
     }
     .img-caption {
-        /* position: relative; */
-        /* display: block; */
-        /* font-weight: bold; */
         font-size: xx-small;
-        /* text-decoration: none; */
-        /* top: 0; */
-        /* padding: 0; */
-        /* z-index: 5; */
-        /* color: green; */
-        /* text-align: center; */
     }
     .line-item {
         margin: 10px 0;
