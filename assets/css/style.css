@@ -141,7 +141,7 @@ li {
 
 .portfolio-line-items {
     position: relative;
-    margin: 20px 0 10px 5vw;
+    margin: 20px 0 30px 5vw;
 }
 
 .telly-award {
@@ -253,7 +253,7 @@ img.img-portfolio {
     }
     .portfolio-line-items {
         position: relative;
-        margin: 10px 0 10px 5vw;
+        margin: 10px 0 20px 5vw;
     }
     .reviews {
         font-size: small;
