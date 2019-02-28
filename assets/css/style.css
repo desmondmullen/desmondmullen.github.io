@@ -123,14 +123,14 @@ p.no-bottom-margin {
     margin: 2vh 12.5vw;
 }
 
-ul {
+.ul-index {
     list-style-type: disc;
     list-style-position: outside;
     margin: 0 20px 0 20px;
     font-size: large;
 }
 
-li {
+.li-index {
     line-height: 150%;
 }
 
@@ -171,6 +171,10 @@ li {
     margin: 10px 10px 10px 20px;
     font-size: large;
     line-height: 125%;
+}
+
+.li-portfolio {
+    margin-right: 80px;
 }
 
 .img-portfolio {
@@ -290,7 +294,7 @@ img.img-portfolio {
     hr.under-headline {
         margin: 10px 0 5px 0;
     }
-    ul {
+    .ul-index {
         margin: 0;
     }
     .text-align-center {
