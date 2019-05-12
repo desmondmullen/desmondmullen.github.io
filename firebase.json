@@ -1,0 +1,7 @@
+"appAssociation": "AUTO",
+"rewrites": [
+  {
+    "source": "/sipspot/**",
+    "dynamicLinks": true
+  }
+]
