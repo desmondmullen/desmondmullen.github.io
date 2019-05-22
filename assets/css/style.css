@@ -4,6 +4,13 @@ body {
     margin: 0;
 }
 
+.iframe {
+    margin-left: 10%;
+    width: 80%;
+    height: 90vh;
+    margin-bottom: 0;
+}
+
 a:hover, a:active {
     color: dodgerblue;
 }
@@ -76,6 +83,17 @@ h1 {
 h1.animated {
     display: block;
     margin: 65px 12.5vw 0px 12.5vw;
+    animation-name: h1-animated;
+    animation-duration: 3s;
+}
+
+.hdng-about {
+    height: 1em;
+}
+
+h1.hdng-about {
+    display: block;
+    margin: 0.5% 12.5vw 0 12.5vw;
     animation-name: h1-animated;
     animation-duration: 3s;
 }
