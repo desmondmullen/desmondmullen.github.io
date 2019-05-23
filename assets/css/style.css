@@ -248,6 +248,10 @@ img.img-portfolio {
     margin: 0 auto;
 }
 
+.contact-link {
+font-size: x-large;
+line-height: 2em;
+}
 .footer {
     position: fixed;
     bottom: 0;
