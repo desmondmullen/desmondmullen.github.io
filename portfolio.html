@@ -204,10 +204,28 @@
                     <div class="img-caption">click to play the game</div>
                 </a>
                 <section class="ttl-portfolio">Word Guess Game</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2018. This implementation
-                        has
-                        many
-                        interesting features beyond the requirements.</em><br><br><strong></strong></p>
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2018.</em></p><p class="dsc-portfolio"><strong>This Word Guess Game lets the user try to guess the top ten baby names for any of the last 100 years.</strong> First the user chooses a year, then they try to guess the name(s). When a name is guessed (or not), it is shown in the appropriate ranking in the "girl names" or "boy names" box so the user is encouraged to play again. Pick a year - maybe your birth year? maybe a parent's birth year? an historic year? - and see how many names you can guess.</p>
+                        <p class="dsc-portfolio"><strong>Features of this project:</strong></p>
+
+<ul class="dsc-portfolio">
+<li  class="li-portfolio">Guess the top-ten baby names from any year of your choice between 1918 and 2017.</li>
+<li  class="li-portfolio">As names are guessed, they assume their correct position in the rankings displayed near the bottom of the screen ("Top Five Girl Names" and "Top Five Boy Names").</li>
+<li  class="li-portfolio">Name order is always randomly selected so that even replaying the same year over again is still a challenge.</li>
+<li  class="li-portfolio">Any and all capitals in a name are properly capitalized - even on a name like "McNally".</li>
+<li  class="li-portfolio">User can select different difficulty levels to tailor the challenge to their preference.</li>
+<li  class="li-portfolio">After each round, or the completion of a ten-round game, simply press [return] (or click the Next Name or New Game buttons near the top of the screen) to play again.</li>
+<li  class="li-portfolio">See a newspaper front page in the background for the year selected (newspaper is not displayed on mobile due to space constraints).
+<li  class="li-portfolio">If you like, you can click a button to see the newspaper front page without obstruction (not on mobile).</li>
+<li  class="li-portfolio">Fully operational on iPhone. Displays properly on Android but I did not finalize the onKeyUp for Android (which is handled differently than computer browsers and iPhones) because it was far outside the scope of the assignment and I don't have an Android. :)</li>
+</ul>
+
+<p class="dsc-portfolio"><strong>Special Features:</strong> This gameplay engine can be very easily adapted to other sorts of lists, for example "the players on different 2018 World Cup teams": select a team and then guess the names of the players. The background image names simply match the index of the list of words; in this game years are used for the index and the matching .jpg (e.g. "1987.jpg") is used for the background image. For World Cup teams, the team name would be the index and the player names would be the values; the [team name].jpg would be the automatically-matched background image. Opacity on the background image is set in CSS so can easily be changed to accomodate whatever jpg files the game creator wants. Opacity cannot be changed on a true "Background-Image" in HTML/CSS so the background image here resides in a wrapper on the body.</p>
+
+<p class="dsc-portfolio">The processSSNames.html file in this repository was created and used to auto-magically output the year/names object that this iteration of the game uses. That HTML file can be used to load and format any tab-delimited file that has the index in the first column and the values in any number of columns after that. With minor tweaks it can do the same for comma-delimited and other data files. The data for this game was simply copied from a table on socialsecurity.gov and pasted into a data file. After processing with processSSNames.html, the fully formatted object was copied and pasted from processSSNames into the game's javascript.</p>
+
+<p class="dsc-portfolio"><em>Why this project is useful:</em> This project demonstrates basic concepts of manipulating objects and arrays for responsive user interaction. A user can select any of 100 sets of names to guess. Names guessed (or not) are arranged in their proper hierarchies, and - on the desktop version - a newspaper front page from the year selected is used as the background and can be viewed without obstruction at the click of a button. The opacity of the background images is adjusted in CSS which was helpful in development. THe background image is held in a container in the HTML because opacity cannot be adjusted programmatically on true background images. The 100-year list of names was simply copy-and-pasted from a Social Security web page and then processed using the processSSNames.html file with this project. That page output a complete JavaScript object ready to copy-and-paste into the gameplay.js file. The user can adjust the difficulty to their preference.</p>
+
+<p class="dsc-portfolio"><em>How users can get started with this project:</em> Pick a year, then type letters to guess a top-ten name from that year. In "normal" mode you get chances equalling the length of the name plus two. In "easy" mode you get the name length plus four chances. In "hard" mode you get chances numbering one less than the length of the name! Correct guesses (guessing a letter that is in the name) do not subtract from the number of chances you have to guess the name.</p>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -216,11 +234,26 @@
                     <div class="img-caption">click to play the game</div>
                 </a>
                 <section class="ttl-portfolio">Star Wars RPG</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2018. This implementation
-                        has
-                        many
-                        interesting features beyond the
-                        requirements.</em><br><br><strong></strong></p>
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2018.</em></p>
+                <p class="dsc-portfolio"><strong>Help Luke Skywalker defeat the empire in this Star Wars Role Playing Game (RPG).</strong> For this - our first jQuery assignment - I chose the "Challenge" option. The instructions for the assignment can be found in my github repository for this game. It may be of interest to look at the instructions, I'm pleased that I was able to take this game far beyond the requirements. I was first introduced to JavaScript about three weeks ago but I have been fortunate to have a good head start on the language having been fluent in its antecedents HyperTalk and AppleScript 20-30 years ago.</p>
+<p class="dsc-portfolio"><strong>Features:</strong></p>
+    <ul class="dsc-portfolio"><li class="li-portfolio">
+    I added animations and other user prompts to make the game engaging, not just a
+    useful coding exercise.</li>
+    <li class="li-portfolio">animations and color-coding of player "chips" lead player through the steps of the game with minimal-to-no instruction.</li>
+    <li class="li-portfolio">if needed, instructions can be accessed by clicking the "How to Play" button on the start screen.</li>
+    <li class="li-portfolio">responsive design plays well on mobile phones - even in portrait mode.</li>
+    <li class="li-portfolio">player sees his/her character's winning-phrase or losing-phrase on screen when the game is over.</li>
+    <li class="li-portfolio">gently blinking buttons and headings guide player through gameplay.</li>
+    </ul>
+<p class="dsc-portfolio">All animations have been carefully coordinated for consistency and logical sense. For example, when choosing an enemy to fight, the clicked enemy darts off to the right (in front of the other players thanks to z-index) to, in a sense, get ready to fight. The player then enters the attack stage from the left at the same time as the enemy enters from the right. They meet in the middle. Once an attack has commenced, the players collide with each other. The statistics display fades out and comes back to alert the user to the fact that it has been updated. Once player or enemy has been defeated, he "shrivels" away down to the defeated enemies area.</p>
+<p class="dsc-portfolio">In developing this project, one of the requirements was that "...players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing the strongest player." This task was interesting because it's difficult to truly run through all the scenarios and make sure everyone can be a winner. I created the <a href="https://desmondmullen.com/unit-4-game/attackmath.html" target="_blank"><em>Attack Math Calculator</em></a> (see below) to run every possible scenario based on health points and attack points inputs for four characters. To date, I have not found a combination of numbers that truly allows for every character to win (but I may just have not found it yet). I feel that the numbers I came up with for my game make for engaging and challenging gameplay. Like the game itself, the Attack Math Calculator looks and works great on mobile phones.</p>
+<p class="dsc-portfolio">If you enter the health and attack numbers in the Attack Math Calculator for a set of characters you see in a pre-existing game, you can exactly predict the outcome of every pairing assuming that game's developer followed the formula for the project:</p>
+    <ul class="dsc-portfolio">
+    <li class="li-portfolio">Each time the player attacks, their Attack Power increases by its base Attack Power. For example, if the base Attack Power is 6, each attack will increase the Attack Power by 6 (12, 18, 24, 30 and so on).</li>
+    <li class="li-portfolio">When the player attacks, the enemy loses Health Points equalling the player's Attack Points and the player loses Health Points equalling the enemy's Attack Points.</li>
+    <li class="li-portfolio">The player's Attack Points increase with each attack, the enemy's Attack Points do not increase.</li>
+    </ul>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -231,8 +264,14 @@
                     <div class="img-caption">click to use the tool</div>
                 </a>
                 <section class="ttl-portfolio">RPG Attack Math Calc</section>
-                <p class="dsc-portfolio">I created this tool to do complex calculations related to a question that
-                    interested me in the Star Wars RPG homework assignment.</p>
+                <p class="dsc-portfolio"><strong>I created this tool to do complex calculations related to a question that interested me in the <a href="http://desmondmullen.com/unit-4-game" target="_blank">Star Wars RPG</a> homework assignment (see above).</strong></p>
+                    <p class="dsc-portfolio">In developing this Star Wars RPG homework, one of the requirements was that "...players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing the strongest player." This task was interesting because it's difficult to truly run through all the scenarios and make sure everyone can be a winner. I created the <em>Attack Math Calculator</em> to run every possible scenario based on health points and attack points inputs for four characters. To date, I have not found a combination of numbers that truly allows for every character to win (but I may just have not found it yet). I feel that the numbers I came up with for my game make for engaging and challenging gameplay. Like the game itself, the Attack Math Calculator looks and works great on mobile phones.</p>
+<p class="dsc-portfolio">If you enter the health and attack numbers in the Attack Math Calculator for a set of characters you see in a pre-existing game, you can exactly predict the outcome of every pairing assuming that game's developer followed the formula for the project:</p>
+    <ul class="dsc-portfolio">
+    <li class="li-portfolio">Each time the player attacks, their Attack Power increases by its base Attack Power. For example, if the base Attack Power is 6, each attack will increase the Attack Power by 6 (12, 18, 24, 30 and so on).</li>
+    <li class="li-portfolio">When the player attacks, the enemy loses Health Points equalling the player's Attack Points and the player loses Health Points equalling the enemy's Attack Points.</li>
+    <li class="li-portfolio">The player's Attack Points increase with each attack, the enemy's Attack Points do not increase.</li>
+    </ul>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -241,11 +280,17 @@
                     <div class="img-caption">click to play the game</div>
                 </a>
                 <section class="ttl-portfolio">Trivia Game</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2018. This implementation
-                        has
-                        many
-                        interesting features beyond the
-                        requirements.</em><br><br><strong></strong></p>
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2018.</em></p>
+                <p class="dsc-portfolio"><strong>TriviaGame - Option Two: Advanced Assignment (Timed Questions)</strong></p>
+<p class="dsc-portfolio">A trivia game with timed questions and a tally at the end of the game. This implementation has five questions to answer but there is, of course, no limit to how many or how few questions the engine can run.</p>
+
+<p class="dsc-portfolio">Here are a few bits I added in addition to the basic requirements:</p>
+<ul class="dsc-portfolio">
+<li class="li-portfolio">works well and looks good on mobiles and tablets.</li>
+<li class="li-portfolio">as a courtesy to the player, the countdown time is slightly padded according to the length of the question string.</li>
+<li class="li-portfolio">though it displays the count in whole seconds, the countdown timer is updated every tenth of a second for smoother appearance. In a more complex game this would use too many resources but it does the job in this context.</li>
+<li class="li-portfolio">progress indicators show progression through the questions (only five questions in this version). These are, simply, bullet points with varying opacity.</li>
+<li class="li-portfolio">some questions have associated images that are animated across the question display area.</li></ul>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -254,11 +299,20 @@
                     <div class="img-caption">click to use the tool</div>
                 </a>
                 <section class="ttl-portfolio">GifTastic gif portfolio</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019. This implementation
-                        has
-                        many
-                        interesting features beyond the
-                        requirements.</em><br><br><strong></strong></p>
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em></p>
+                <p class="dsc-portfolio"><strong>GifTastic gif portfolio is a tool for searching Giphy.com and saving searches and favorites to make your own portfolio.</strong></p>
+<p class="dsc-portfolio">Please note: Instead of clicking to start and stop gif animations as instructed in the assignment, I chose to have the app run the animations on mouse hover. I believe this approach feels more familiar, natural, and intuitive to users.</p>
+<p class="dsc-portfolio">In addition to the basic function of the assignment, this app does the following:</p>
+<p class="dsc-portfolio">REALLY COOL BITS:</p>
+<ul class="dsc-portfolio"><li class="li-portfolio">Favorites: Any gif can be favorited by clicking the empty heart glyphicon (which toggles to a "full" heart). Favorites are recalled by clicking the Favorites button at the left-most of the saved-search buttons.</li>
+<li class="li-portfolio">Saved-Search Buttons: Users can add their own buttons for saved searches. The really cool bit is that these buttons can be deleted by clicking on them while pressing Option (on Mac) or Alt (on PC), allowing users to truly customize their portfolios.</li>
+<li class="li-portfolio">Search without having to create a Saved-Search button. This is very useful for just browsing.</li>
+<li class="li-portfolio">Favorites and Saved-Search Buttons are saved in cookies allowing them to persist even after closing the window and/or quitting the browser.</li></ul>
+<p class="dsc-portfolio">STILL PRETTY COOL BITS:</p>
+<ul class="dsc-portfolio"><li class="li-portfolio">Fully functional and responsive on mobiles using touchstart event handlers (required for iOS, optional for Android which can handle both click and touchstart). The desktop-only 'delete button' feature is not enabled on mobile.</li>
+<li class="li-portfolio">"Show more for this search..." button at bottom of page loads 10 more gifs at a time based on the last search parameters.</li>
+<li class="li-portfolio">All searches include a maximum rating parameter (default is PG).</li>
+<li class="li-portfolio">Every gif "card" displays the title and rating of the gif. Every gif's ID is embedded in a data-id attribute in the card for use when saving and/or recalling as a favorite.</li></ul>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -277,26 +331,22 @@
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
-                <a class="img-portfolio plain-link" href="https://github.com/desmondmullen" target="_blank"><img
-                        class="img-portfolio" src="assets/images/github-account.jpg" alt="GitHub Account">
-                    <div class="img-caption">click to see my GitHub account</div>
-                </a>
-                <section class="ttl-portfolio">GitHub Account</section>
-                <p class="dsc-portfolio">The home page of my GitHub account.</p>
-            </div>
-            <hr class="hr-portfolio">
-            <div class="line-item">
                 <a class="img-portfolio plain-link" href="https://desmondmullen.com/RPS-Multiplayer/"
                     target="_blank"><img class="img-portfolio" src="assets/images/RPS-Multiplayer.jpg"
                         alt="Rock Paper Scissors Multiplayer">
                     <div class="img-caption">click to play the game</div>
                 </a>
                 <section class="ttl-portfolio">RPS Multiplayer</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019. This implementation
-                        has
-                        many
-                        interesting features beyond the
-                        requirements.</em><br><br><strong></strong></p>
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em></p>
+                <p class="dsc-portfolio"><strong>RPS-Multiplayer lets you play Rock Paper Scissors with a friend or with a random person online.</strong></p>
+<p class="dsc-portfolio">In addition to the basic function of the assignment, this app does the following:</p>
+<p class="dsc-portfolio"><strong>REALLY COOL BITS:</strong></p>
+<ul class="dsc-portfolio"><li class="li-portfolio">The status of your opponent is always instantly updated with text and color cues - whether you are in the queue (red), waiting for an opponent to connect (light red), when an opponent has connected (yellow), or when your opponent has made their choice (green).</li>
+<li class="li-portfolio">Each player's location is shown on maps below the gameplay area giving an added dimension to the human-connection aspect of this multiplayer game.</li>
+<li class="li-portfolio">Players can send messages to each other while playing. Players can even use this as a chat application and think of the game as secondary.</li>
+<li class="li-portfolio">If two people are already using the game and others try to connect, they will be notified that "The queue of players is full. If you leave this browser tab open, we'll update you when it is your turn to play!". The red "waiting in queue" banner turns yellow when the player gets to the top of the queue and gets matched with another player.</li>
+<li class="li-portfolio">Fully functional and responsive on mobiles.</li>
+<li class="li-portfolio">Page reloads are properly handled making the reloaded page the last player in the queue. Internal data tracking of "player 1" and "player 2" are juggled automatically.</li></ul>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -324,7 +374,7 @@
                 </a>
                 <section class="ttl-portfolio">LIRI node app</section>
 
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em><br><br><strong>This "Language
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em></p><p class="dsc-portfolio"><strong>This "Language
                         Interpretation
                         and Recognition Interface" node app retrieves data from Bandsintown, Spotify, and OMDB and
                         formats
@@ -360,7 +410,7 @@
                     <div class="img-caption-rectangle"></div>
                 </a>
                 <section class="ttl-portfolio">Constructor Word Guess</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em><br><br><strong>This Constructor Word
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em></p><p class="dsc-portfolio"><strong>This Constructor Word
                         Guess
                         app uses
                         node and
@@ -420,7 +470,7 @@
                     <div class="img-caption-rectangle"></div>
                 </a>
                 <section class="ttl-portfolio">Blamazon</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em><br><br><strong>Blamazon is an Amazon.com-like storefront demonstrating SQL
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em></p><p class="dsc-portfolio"><strong>Blamazon is an Amazon.com-like storefront demonstrating SQL
                         skills.</strong> I created this for the Coding Boot Camp at UNC-Chapel Hill in March 2019. The
                     assignment called for very basic features which approximated retail business logic for customers,
                     managers, and supervisors. I took the assignment further and created real business logic that could
@@ -478,7 +528,7 @@
                     <div class="img-caption-rectangle"></div>
                 </a>
                 <section class="ttl-portfolio">FriendFinder</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em><br><br><strong>FriendFinder is a personality profile matching app demonstrating full stack development skills in HTML, JavaScript, Node.js, and Express.</strong> I created this for the Coding Boot Camp at UNC-Chapel Hill in March 2019. The assignment called for very
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Winter 2019.</em></p><p class="dsc-portfolio"><strong>FriendFinder is a personality profile matching app demonstrating full stack development skills in HTML, JavaScript, Node.js, and Express.</strong> I created this for the Coding Boot Camp at UNC-Chapel Hill in March 2019. The assignment called for very
                 basic features taking answers from a ten-question survey and matching them with the one closest match already in the database (an array). I took the assignment further and created real business logic that could be extended to a true, functioning dating/friend-finder site.
                 </p>
                 <p class="dsc-portfolio">In addition to the basic functions of the assignment, this app does the following:</p>
@@ -507,7 +557,7 @@
                 <section class="ttl-portfolio">Eat Da Burger</section>
                 <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Spring 2019. This implementation
                         has
-                        many interesting features beyond the requirements.</em>
+                        many interesting features beyond the requirements. Please see the version below (adapted to Sequelize) for more information.</em>
                 </p>
             </div>
             <hr class="hr-portfolio">
@@ -526,6 +576,10 @@
                         the name of the maker of each burger as well as the eater of each
                         burger.</em>
                 </p>
+                <p class="dsc-portfolio"><strong>Eat-Da-Burger is an exercise in full stack development skills with a focus on Node.js, Express, Handlebars, Sequelize, and SQL.</strong></p>
+<p class="dsc-portfolio">Uses Node, Express, Handlebars, Sequelize, SQL, and an MVC design pattern. Node, Express and Sequelize query and route the data, Handlebars is used to generate HTML. A JawsDB MySQL add-on supplies the SQL component in the Heroku deployment.</p>
+<p class="dsc-portfolio">Users can "Add a Burger" by first clicking the "Select or add your name" button, then entering a burger name of their choosing. Their burger is then added to the "Burgers that have been created" list along with their name as maker. Users can click "Devour this burger" and select or add their name to devour any burger that has been created and not yet devoured. Clicking "Devour..." moves the burger into the "Hall of Fame" where the maker and eater of the burger are displayed with the burger name. "Gameplay" is not the point here, it's all about the internal workings and interplay of the front-end, server-side, and SQL components.</p>
+<p class="dsc-portfolio">In addition to the requirements of the assignment, I added a fade-out and fade-in animation representing the burger getting devoured and then showing up in the Hall of Fame list of devoured burgers. This ended up being way more complex than I would have imagined but was a fun challenge. Doing these animations required adding a column to the database table, doing "multiple statements" in each SQL query, and some cleverness with the Handlebars code. It looks simple but it's fairly involved. I like that it makes clear what happens when a burger gets "devoured".</p>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -537,6 +591,26 @@
                 <section class="ttl-portfolio">goTreeUrself</section>
                 <p class="dsc-portfolio"><em>Group Project for UNC Full Stack Bootcamp, Spring 2019.</em>
                 </p>
+                <p class="dsc-portfolio"><strong>goTreeUrself is a site promoting the importance of planting trees to help renew resources lost to mass deforestation.</strong> Encouraging people to plant a tree clearly has value but, for most people, it is an abstract idea. By putting "pins" on a map showing where others have planted trees, goTreeUrself encourages participation and lets users show the world trees they care about - either ones they have planted or ones that are important in their lives (e.g., "My grandfather planted this tree when he and grandmother got married"). Adding 15 "Famous Trees" (denoted by white arrows) gives another perspective on the environmental importance, historical importance, outsized lifespans and dimensions, and the wonder and beauty of the trees that surround us.</p>
+
+<p class="dsc-portfolio"><strong>Features</strong></p>
+<ul class="dsc-portfolio"><li class="li-portfolio">Users can register and upload pictures of their own trees.</li>
+<li class="li-portfolio">Geotags embedded in uploaded pictures are used to locate the trees on the map.</li>
+<li class="li-portfolio">When geotag data is not available, we ask the user for the closest address to the tree. Users can enter as much or little location data as they prefer. We use that data to geocode and locate the tree on the map.</li>
+<li class="li-portfolio">Users can add a short biography statement about themselves and upload a profile picture if they like.</li>
+<li class="li-portfolio">Each tree can be cataloged with the date planted, a name or statement (e.g., "In memory of my father"), and the type of tree (e.g., elm, yew, pine, fir, etc.).</li></ul>
+
+<p class="dsc-portfolio"><strong>Future enhancements</strong></p>
+<ul class="dsc-portfolio"><li class="li-portfolio">We would like to encourage community among the users of this site by letting them search for other users/trees based on cohort (timeframe when tree was planted), or tree type, or even tags such as "Memorial", "Dedication", "Rare", "Fruit", etc.</li>
+<li class="li-portfolio">Presently, you can see a picture and basic information about any tree on the map. In future it would be nice to be able to visit other users' profile pages and even contact other like-minded users.</li></ul>
+
+<p class="dsc-portfolio"><strong>Technologies</strong></p>
+<ul class="dsc-portfolio"><li class="li-portfolio">Google Maps was central to our display of users' trees. We expanded the possibilities of basic markers by making the markers clickable to show infowindows and double-clickable to recenter and zoom-in. Each infowindow contains info about the tree and a click-to-enlarge picture. The Famous Trees contain links to Wikipedia pages giving more background on the trees.</li>
+<li class="li-portfolio">Filestack was used for photo upload to give a variety of ways for users to upload their pictures (from their device, from a link, from Facebook, etc.) and for us to extract any existing EXIF geotag data.</li>
+<li class="li-portfolio">Foundation and CSS Grid were used to arrange and style the front end.</li>
+<li class="li-portfolio">Node, Handlebars, Sequelize, mySQL2, and JawsDB were used and the site was deployed on Heroku.</li>
+<li class="li-portfolio">Sample data including user's names, username/passwords, profile pictures, tree names, planted-dates, and latitude/longitude locations were compiled using the randomUser API and latitude/longitude combinations were tested to see if they were on land using the geoNames API. We excluded Antarctic latitudes for, while they may be on land, we felt it was unlikely that many people would try planting trees there.</li>
+<li class="li-portfolio">A list of famous trees on MentalFloss.com was the inspiration and source of our plotting 15 famous trees.</li></ul>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -546,11 +620,11 @@
                     <div class="img-caption-rectangle"></div>
                 </a>
                 <section class="ttl-portfolio">NewSnippets</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Spring 2019. This implementation
-                        has
-                        some interesting features beyond the
-                        requirements.</em>
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Spring 2019.</em>
                 </p>
+                <p class="dsc-portfolio"><strong>NewSNippets is an exercise in full stack development skills with a focus on Express, MongoDB, Axios, and Cheerio.</strong></p>
+<p class="dsc-portfolio">NewSNippets scrapes news articles from the New York Times and allows users to save articles (like "favorites") and make notes to attach to articles. Multiple notes can be created for any one article. Notes can easily be deleted, as well.</p>
+<p class="dsc-portfolio">In addition to the requirements of the assignment, I used radio buttons and toggle switches for clarity in the user interface making it unmistakeable whether an article is saved or not and whether the user is viewing All the articles or only the Saved ones. I also added a Search feature for searching through all the articles. This implementation of search allows for multi-word and case-insensitive searches. Searching for nothing - leaving the search field blank - retrieves all articles.</p>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -560,11 +634,10 @@
                     <div class="img-caption-rectangle"></div>
                 </a>
                 <section class="ttl-portfolio">ClickyPiccy</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Spring 2019. This implementation
-                        has
-                        some interesting features beyond the
-                        requirements.</em>
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Spring 2019.</em>
                 </p>
+                <p class="dsc-portfolio"><strong>ClickyPiccy is an exercise in full stack development skills with a focus on React, component state, and user inputs.</strong></p>
+<p class="dsc-portfolio">In addition to the requirements of the assignment, I took care to manage the flow of the game to make next steps more clear to the user, and to make the game more enjoyable to play. Additionally, I made ClickyPiccy look great and play well on mobiles as well as desktops/laptops.</p>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
@@ -575,10 +648,12 @@
                     <div class="img-caption-rectangle"></div>
                 </a>
                 <section class="ttl-portfolio">Google Books Search</section>
-                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Spring 2019. This implementation
-                        has
-                        some interesting features beyond the requirements.</em>
+                <p class="dsc-portfolio"><em>Homework assignment for UNC Full Stack Bootcamp, Spring 2019.</em>
                 </p>
+                <p class="dsc-portfolio"><strong>Google Books Search is an exercise in full stack development skills with a focus on React and MongoDB.</strong></p>
+<p class="dsc-portfolio">With Google Books Search, users can easily search, save, and preview the content of books with the full power of the Google Books platform.</p>
+<p class="dsc-portfolio">In addition to the requirements of the assignment, I expanded the user's search options to Title, Author, and Subject. Users can enter search terms in any or all of those fields. I added a toggling navbar at the top of the page and a toggling "Add to Saved"/"Remove from Saved" button for each book result to instantly orient the user to the status of the app and the books they are viewing.</p>
+<p class="dsc-portfolio">This application fulfills the bonus requirement of the assignment as well, broadcasting live updates of newly-saved books to any and every browser that is accessing the site. Newly saved book titles appear in a message just below the navbar.</p>
             </div>
             <hr class="hr-portfolio">
             <div class="line-item">
