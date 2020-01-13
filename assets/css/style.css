@@ -154,7 +154,7 @@ p.no-bottom-margin {
 
 .profile-pic {
     float: left;
-    margin: 5px 20px 5px 0;
+    margin: 5px 20px 40px 0;
 }
 
 .portfolio-line-items {
@@ -249,9 +249,10 @@ img.img-portfolio {
 }
 
 .contact-link {
-font-size: x-large;
-line-height: 2em;
+    font-size: large;
+    line-height: 2em;
 }
+
 .footer {
     position: fixed;
     bottom: 0;
