@@ -1,207 +1,210 @@
 body {
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .iframe {
-    margin-left: 30%;
-    width: 40%;
-    height: 55vh;
-    margin-bottom: 20px;
+  margin-left: 30%;
+  width: 40%;
+  height: 55vh;
+  margin-bottom: 20px;
 }
 
-a:hover, a:active {
-    color: dodgerblue;
+a:hover,
+a:active {
+  color: dodgerblue;
 }
 
 .plain-link {
-    text-decoration: none;
-    color: darkslategray;
+  text-decoration: none;
+  color: darkslategray;
 }
 
 .fixed-header {
-    position: fixed;
-    top: 0;
-    background-color: white;
-    border-top: 5px solid dodgerblue;
-    z-index: 99;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-top: 5px solid dodgerblue;
+  z-index: 99;
+  width: 100%;
 }
 
 nav {
-    font-size: xx-large;
-    margin-left: 1.5vw;
-    font-family: 'Bungee Inline', cursive;
-    font-weight: bold;
+  font-size: xx-large;
+  margin-left: 1.5vw;
+  font-family: 'Bungee Inline', cursive;
+  font-weight: bold;
 }
 
 .links {
-    display: inline;
+  display: inline;
 }
 
 .nav-link {
-    float: right;
-    font-size: large;
-    margin: 10px 20px;
-    padding: 0;
+  float: right;
+  font-size: large;
+  margin: 10px 20px;
+  padding: 0;
 }
 
-a.navbar-brand:hover, .btn:hover {
-    background-color: dodgerblue;
-    color: white;
+a.navbar-brand:hover,
+.btn:hover {
+  background-color: dodgerblue;
+  color: white;
 }
 
 a.img-portfolio:hover {
-    opacity: 0.5;
-    background-color: dodgerblue;
+  opacity: 0.5;
+  background-color: dodgerblue;
 }
 
 a.review-text {
-    font-size: medium;
-    text-align: center;
+  font-size: medium;
+  text-align: center;
 }
 
 hr {
-    border: 1px solid lightgray;
-    width: 97vw;
+  border: 1px solid lightgray;
+  width: 97vw;
 }
 
 hr.header {
-    margin: 10px 12.5vw 0 12.5vw;
-    width: 75vw;
+  margin: 10px 12.5vw 0 12.5vw;
+  width: 75vw;
 }
 
 h1 {
-    font-family: 'Bungee Inline', cursive;
-    font-size: x-large;
-    font-weight: bold;
-    color: darkslategray;
-    margin: 0;
+  font-family: 'Bungee Inline', cursive;
+  font-size: x-large;
+  font-weight: bold;
+  color: darkslategray;
+  margin: 0;
 }
 
 h1.animated {
-    display: block;
-    margin: 65px 12.5vw 0px 12.5vw;
-    animation-name: h1-animated;
-    animation-duration: 3s;
+  display: block;
+  margin: 65px 12.5vw 0px 12.5vw;
+  animation-name: h1-animated;
+  animation-duration: 3s;
 }
 
 .hdng-about {
-    height: 1em;
+  height: 1em;
 }
 
 h1.hdng-about {
-    display: block;
-    margin: 0.5% 12.5vw 0 12.5vw;
-    animation-name: h1-animated;
-    animation-duration: 3s;
+  display: block;
+  margin: 0.5% 12.5vw 0 12.5vw;
+  animation-name: h1-animated;
+  animation-duration: 3s;
 }
 
 @keyframes h1-animated {
-    0% {
-        opacity: .5;
-    }
-    35% {
-        opacity: 1;
-    }
-    40% {
-        color: dodgerblue;
-    }
-    50% {
-        opacity: 1;
-    }
-    60% {
-        background-color: dodgerblue;
-    }
-    75% {
-        opacity: 0;
-        color: dodgerblue;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        background-color: initial;
-    }
+  0% {
+    opacity: 0.5;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    color: dodgerblue;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    background-color: dodgerblue;
+  }
+  75% {
+    opacity: 0;
+    color: dodgerblue;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    background-color: initial;
+  }
 }
 
 p {
-    line-height: 150%;
-    font-size: large;
-    margin: 10px 0 20px 0;
+  line-height: 150%;
+  font-size: large;
+  margin: 10px 0 20px 0;
 }
 
 .clearfix {
-    overflow: auto;
+  overflow: auto;
 }
 
 p.no-bottom-margin {
-    clear: both;
-    margin-bottom: 0;
+  clear: both;
+  margin-bottom: 0;
 }
 
 .index-indent {
-    margin: 2vh 12.5vw;
+  margin: 2vh 12.5vw;
+  overflow: hidden;
 }
 
 .ul-index {
-    list-style-type: disc;
-    list-style-position: outside;
-    margin: 0 20px 0 20px;
-    font-size: large;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0 20px 0 20px;
+  font-size: large;
 }
 
 .li-index {
-    line-height: 150%;
+  line-height: 150%;
 }
 
 .profile-pic {
-    float: left;
-    margin: 5px 20px 10px 0;
+  float: left;
+  margin: 5px 20px 10px 0;
 }
 
 .portfolio-line-items {
-    position: relative;
-    margin: 20px 0 30px 5vw;
+  position: relative;
+  margin: 20px 0 30px 5vw;
 }
 
 .telly-award {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .telly-award img {
-    display: block;
-    margin: 0 auto;
-    padding-top: 10px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 .reviews {
-    display: block;
-    text-align: center;
-    margin: 0 8vw 0 35vw;
+  display: block;
+  text-align: center;
+  margin: 0 8vw 0 35vw;
 }
 
 .review-text {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .dsc-portfolio {
-    float: left;
-    width: 58vw;
-    margin: 10px 10px 10px 20px;
-    font-size: large;
-    line-height: 125%;
+  float: left;
+  width: 58vw;
+  margin: 10px 10px 10px 20px;
+  font-size: large;
+  line-height: 125%;
 }
 
 .li-portfolio {
-    margin-right: 80px;
+  margin-right: 80px;
 }
 
 .img-portfolio {
-    float: left;
-    width: 30vw;
+  float: left;
+  width: 30vw;
 }
 
 /* .img-portfolio-sipspot {
@@ -209,143 +212,143 @@ p.no-bottom-margin {
 } */
 
 img.img-portfolio {
-    border-left: 1px solid black;
+  border-left: 1px solid black;
 }
 
 .img-caption {
-    position: relative;
-    display: block;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-    padding: 0;
-    z-index: 5;
-    color: green;
-    text-align: center;
+  position: relative;
+  display: block;
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  padding: 0;
+  z-index: 5;
+  color: green;
+  text-align: center;
 }
 
 .line-item {
-    margin: 20px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 
 .line-item::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: '';
+  clear: both;
+  display: table;
 }
 
 .ttl-portfolio {
-    float: left;
-    margin: 0 20px;
-    width: 58vw;
-    background-color: #E8860C;
-    color: white;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 10px;
+  float: left;
+  margin: 0 20px;
+  width: 58vw;
+  background-color: #e8860c;
+  color: white;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .hr-portfolio {
-    width: 70vw;
-    margin: 0 auto;
+  width: 70vw;
+  margin: 0 auto;
 }
 
 .contact-link {
-    font-size: large;
-    line-height: 2em;
+  font-size: large;
+  line-height: 2em;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    background-color: dodgerblue;
-    color: white;
-    text-align: right;
-    font-size: medium;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: dodgerblue;
+  color: white;
+  text-align: right;
+  font-size: medium;
+  width: 100%;
 }
 
 @media only screen and (max-width: 900px) {
-    nav {
-        font-size: large;
-        margin-left: 10px;
-    }
-    .nav-link {
-        font-size: small;
-        margin: 5px 5px;
-    }
-    .links {
-        display: block;
-    }
-    .menu {
-        display: block;
-        font-size: small;
-    }
-    .index-indent {
-        margin: 2vh 6.25vw;
-    }
-    .iframe {
-        margin-left: 0;
-        width: 100%;
-        height: 65vh;
-    }
-    .portfolio-line-items {
-        position: relative;
-        margin: 10px 0 20px 5vw;
-    }
-    .reviews {
-        font-size: small;
-        margin: 0 13vw 0 35vw;
-    }
-    .dsc-portfolio {
-        float: left;
-        width: 55vw;
-        margin: 0 10px;
-        font-size: small;
-        line-height: 120%;
-    }
-    .img-portfolio {
-        float: left;
-        width: 30vw;
-    }
-    .img-caption {
-        font-size: xx-small;
-    }
-    .line-item {
-        margin: 10px 0;
-    }
-    .ttl-portfolio {
-        float: left;
-        margin: 0 10px 5px 10px;
-        height: 1.7vh;
-        width: 55vw;
-        font-size: x-small;
-        padding: 5px;
-    }
-    h1 {
-        font-size: medium;
-    }
-    hr.under-headline {
-        margin: 10px 0 5px 0;
-    }
-    .ul-index {
-        margin: 0;
-    }
-    .text-align-center {
-        text-align: center;
-    }
-    .width-180 {
-        width: 180px;
-    }
-    .footer {
-        font-size: small;
-    }
+  nav {
+    font-size: large;
+    margin-left: 10px;
+  }
+  .nav-link {
+    font-size: small;
+    margin: 5px 5px;
+  }
+  .links {
+    display: block;
+  }
+  .menu {
+    display: block;
+    font-size: small;
+  }
+  .index-indent {
+    margin: 2vh 6.25vw;
+  }
+  .iframe {
+    margin-left: 0;
+    width: 100%;
+    height: 65vh;
+  }
+  .portfolio-line-items {
+    position: relative;
+    margin: 10px 0 20px 5vw;
+  }
+  .reviews {
+    font-size: small;
+    margin: 0 13vw 0 35vw;
+  }
+  .dsc-portfolio {
+    float: left;
+    width: 55vw;
+    margin: 0 10px;
+    font-size: small;
+    line-height: 120%;
+  }
+  .img-portfolio {
+    float: left;
+    width: 30vw;
+  }
+  .img-caption {
+    font-size: xx-small;
+  }
+  .line-item {
+    margin: 10px 0;
+  }
+  .ttl-portfolio {
+    float: left;
+    margin: 0 10px 5px 10px;
+    height: 1.7vh;
+    width: 55vw;
+    font-size: x-small;
+    padding: 5px;
+  }
+  h1 {
+    font-size: medium;
+  }
+  hr.under-headline {
+    margin: 10px 0 5px 0;
+  }
+  .ul-index {
+    margin: 0;
+  }
+  .text-align-center {
+    text-align: center;
+  }
+  .width-180 {
+    width: 180px;
+  }
+  .footer {
+    font-size: small;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .links {
-        display: block;
-    }
+  .links {
+    display: block;
+  }
 }
