@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SMS Opt-In Form</title>
+</head>
+<body>
+  <h1>Sign Up for SMS Updates</h1>
+  <form action="/opt-in" method="POST">
+    <label for="name">Your Name:</label><br>
+    <input type="text" name="name" id="name" required><br><br>
+
+    <label for="phone">Mobile Number:</label><br>
+    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required><br><br>
+
+    <label>
+      <input type="checkbox" name="consent" required>
+      I agree to receive SMS messages from Desmond Mullen.
+    </label><br><br>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <p>Message and data rates may apply. Reply STOP to unsubscribe at any time. We respect your privacy. Your number will only be used for SMS updates related to Desmond Mullen.
+</p>
+</body>
+</html>
