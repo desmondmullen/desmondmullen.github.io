@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SMS Opt-In Form</title>
+  <meta charset="UTF-8" />
+  <title>Legal Aid Intake Demo – SMS Opt-In</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    label { display: block; margin-top: 1rem; font-weight: 600; }
+    input[type="text"], input[type="tel"] { width: 100%; padding: .6rem .7rem; font-size: 1rem; }
+    button { margin-top: 1rem; padding: .7rem 1rem; font-size: 1rem; cursor: pointer; }
+    small { color: #444; }
+  </style>
 </head>
 <body>
-  <h1>Sign Up for SMS Updates</h1>
-  <form action="/opt-in" method="POST">
-    <label for="name">Your Name:</label><br>
-    <input type="text" name="name" id="name" required><br><br>
+  <h1>Legal Aid Intake Demo – SMS Opt-In</h1>
+  <p>
+    This is a proof-of-concept project operated by <strong>Desmond Mullen</strong> to demonstrate how a nonprofit legal aid organization might use SMS for eligibility screening and intake. It is not affiliated with any nonprofit.
+  </p>
 
-    <label for="phone">Mobile Number:</label><br>
-    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required><br><br>
+  <form action="/opt-in" method="POST" novalidate>
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" autocomplete="name" required />
 
-    <label>
-      <input type="checkbox" name="consent" required>
-      I agree to receive SMS messages from Desmond Mullen.
-    </label><br><br>
+    <label for="phone">Mobile Number</label>
+    <!-- E.164-friendly; allows +1xxxxxxxxxx etc. -->
+    <input type="tel" name="phone" id="phone"
+           inputmode="tel" autocomplete="tel"
+           pattern="^\+?[1-9]\d{1,14}$"
+           placeholder="+19195551234"
+           required />
+
+    <label style="font-weight:400; display:flex; gap:.6rem; align-items:flex-start; margin-top:1rem;">
+      <input type="checkbox" name="consent" required />
+      <span>
+        I agree to receive SMS messages from <strong>Desmond Mullen – Legal Aid Intake Demo</strong>
+        for eligibility screening and intake questions. I understand that
+        message frequency varies. <strong>Reply STOP to unsubscribe, HELP for help. Msg&amp;data rates may apply.</strong>
+        I confirm I am the owner or customary user of this mobile number.
+      </span>
+    </label>
 
     <button type="submit">Sign Up</button>
   </form>
 
-  <p>Message and data rates may apply. Reply STOP to unsubscribe at any time. We respect your privacy. Your number will only be used for SMS updates related to Desmond Mullen.</p>
-  <p>By submitting your phone number, you consent to receive SMS messages from this prototype legal aid intake demo. Reply STOP to unsubscribe.</p>
-</p>
-</body>
-</html>
+  <p><small>
+    By submitting this form, you consent to receive informational, user-initiated SMS related to the Legal Aid Intake Demo.
+    No marketing messages. Consent is not a condition of any service or employment opportunity.
+  </small></p>
+
+  <p><small>
+    Opt-in keywords accepted: <strong>START</strong>, <strong>YES</strong>. Opt-out keywords: <strong>STOP</strong>, <stro
