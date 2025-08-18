@@ -28,8 +28,6 @@
     .section { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--line); }
     a { color: var(--accent); text-decoration: none; }
     a:focus, a:hover { text-decoration: underline; }
-    .keywords { display:flex; flex-wrap:wrap; gap:.5rem 1rem; }
-    .k { background:#f0f0f0; padding:.25rem .5rem; border-radius:6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     .inline { display:flex; gap:.6rem; align-items:flex-start; }
     .note { padding:.75rem; border:1px dashed #dcdcdc; border-radius:10px; background:#fcfcfc; }
   </style>
@@ -56,7 +54,7 @@
       <p class="note small"><strong>Important:</strong> SMS is <em>optional</em> and is <em>not required</em> to use or view this demo.</p>
     </section>
 
-    <!-- CONSENT TERMS (use this anchor URL for Twilio "Proof of consent" field) -->
+    <!-- CONSENT TERMS -->
     <section class="section" id="consent">
       <h2>SMS Consent Terms</h2>
       <p class="small">
@@ -68,11 +66,11 @@
       </p>
     </section>
 
-    <!-- PRIMARY USER FLOW (no SMS required) -->
+    <!-- NO-SMS FLOW -->
     <section class="section" aria-labelledby="continue-title">
       <h2 id="continue-title">Use the Demo Without SMS</h2>
       <p class="small">You can continue without receiving text messages.</p>
-      <form action="/continue-no-sms" method="POST" class="card" aria-label="Continue without SMS form" novalidate>
+      <form action="/continue-no-sms" method="POST" class="card" novalidate>
         <div class="grid">
           <div>
             <label for="name-nosms">Your Name</label>
@@ -83,7 +81,7 @@
             <input type="text" id="email-nosms" name="email" inputmode="email" autocomplete="email" placeholder="you@example.org" />
           </div>
         </div>
-        <button class="btn btn-secondary" type="submit" aria-label="Continue without SMS">Continue without SMS</button>
+        <button class="btn btn-secondary" type="submit">Continue without SMS</button>
       </form>
     </section>
 
@@ -92,10 +90,7 @@
       <h2 id="opt-in-form-title">Optional: Receive SMS Messages</h2>
       <p class="small">If you’d like to receive SMS prompts, provide your mobile number and give consent below.</p>
 
-      <form action="/opt-in" method="POST" novalidate class="card" aria-label="Optional SMS opt-in form">
-        <!-- simple honeypot for bots -->
-        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px;" aria-hidden="true">
-
+      <form action="/opt-in" method="POST" novalidate class="card">
         <div class="grid">
           <div>
             <label for="name">Your Name</label>
@@ -114,21 +109,21 @@
               placeholder="+19195551234"
               aria-describedby="phone-help"
             />
-            <div id="phone-help" class="tiny muted">Enter in international format if possible (e.g., +19195551234). US numbers without “+1” are accepted.</div>
+            <div id="phone-help" class="tiny muted">Enter in international format if possible (e.g., +19195551234).</div>
           </div>
         </div>
 
         <label class="small inline" style="font-weight:400;">
-          <!-- NO 'required' HERE: consent is optional -->
-          <input type="checkbox" id="consent-checkbox" name="consent" value="yes" aria-describedby="consent-text">
-          <span id="consent-text">
-            I consent to receive SMS messages from <strong>Desmond Mullen – Legal Aid Intake Demo</strong>. Message frequency may vary.
-            Message &amp; data rates may apply. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help.
+          <input type="checkbox" id="consent-checkbox" name="consent" value="yes">
+          <span>
+            I consent to receive SMS messages from <strong>Desmond Mullen – Legal Aid Intake Demo</strong>.
+            Message frequency may vary. Message &amp; data rates may apply.
+            Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help.
             See the <a href="#consent">SMS Consent Terms</a>.
           </span>
         </label>
 
-        <button class="btn" type="submit" aria-label="Submit optional SMS opt-in">Sign Up for SMS (Optional)</button>
+        <button class="btn" type="submit">Sign Up for SMS (Optional)</button>
       </form>
 
       <p class="tiny muted" style="margin-top:.5rem;">
@@ -136,24 +131,13 @@
       </p>
     </section>
 
-    <!-- ALTERNATIVE: KEYWORD OPT-IN -->
-    <section class="section">
-      <h2>Alternative: Keyword Opt-In</h2>
-      <p class="small">You can also opt in by texting a keyword from your mobile device:</p>
-      <div class="small keywords">
-        <div><strong>Text to opt in:</strong> <span class="k">START</span> or <span class="k">YES</span> to <span class="k">(855) 303-1412</span></div>
-        <div><strong>Opt-out anytime:</strong> <span class="k">STOP</span> <span class="k">CANCEL</span> <span class="k">UNSUBSCRIBE</span></div>
-        <div><strong>Help:</strong> <span class="k">HELP</span> <span class="k">INFO</span></div>
-      </div>
-      <p class="tiny muted">Keyword opt-in is an alternative path; it is not required to view or use the demo.</p>
-    </section>
-
     <section class="section">
       <h2>What to Expect</h2>
       <p class="small">After you opt in, you’ll receive a welcome text and then interactive prompts. Example:</p>
       <blockquote class="card small" style="margin: .5rem 0;">
-        Welcome to the Legal Aid Intake Demo by Desmond Mullen. This demo guides you through eligibility and intake questions.
-        Reply START to begin. Reply STOP to unsubscribe, HELP for help. Msg&amp;data rates may apply.
+        Welcome to the Legal Aid Intake Demo by Desmond Mullen. 
+        This demo guides you through eligibility and intake questions. 
+        Reply STOP to unsubscribe, HELP for help. Msg&amp;data rates may apply.
       </blockquote>
     </section>
 
@@ -172,7 +156,6 @@
   </footer>
 
   <script>
-    // set current year in footer
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
